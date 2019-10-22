@@ -1,106 +1,106 @@
 """"""""""""""""""""""""""""""""""""
-s" et nocompatible
-s" yntax on
-s" et nowrap
-s" et encoding=utf8
- " 
-"" """ START Vundle Configuration 
- " 
-""  Disable file type for vundle
-f" iletype off                  " required
- " 
-""  set the runtime path to include Vundle and initialize
-s" et rtp+=~/.vim/bundle/Vundle.vim
+set nocompatible
+syntax on
+set nowrap
+set encoding=utf8
+set guifont="firacode"
+"""" START Vundle Configuration 
+ 
+" Disable file type for vundle
+filetype off                  " required
+ 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+plugin 'gmarik/Vundle.vim'
 
 " Utility
-Plugin 'scrooloose/nerdtree'
-Plugin 'majutsushi/tagbar'
-Plugin 'ervandew/supertab'
-Plugin 'BufOnly.vim'
-Plugin 'wesQ3/vim-windowswap'
-Plugin 'SirVer/ultisnips'
-Plugin 'junegunn/fzf.vim'
-Plugin 'junegunn/fzf'
-Plugin 'godlygeek/tabular'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'benmills/vimux'
-Plugin 'jeetsukumaran/vim-buffergator'
-Plugin 'gilsondev/searchtasks.vim'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'tpope/vim-dispatch'
+plugin 'scrooloose/nerdtree'
+plugin 'majutsushi/tagbar'
+plugin 'ervandew/supertab'
+plugin 'BufOnly.vim'
+plugin 'wesQ3/vim-windowswap'
+plugin 'SirVer/ultisnips'
+plugin 'junegunn/fzf.vim'
+plugin 'junegunn/fzf'
+plugin 'godlygeek/tabular'
+plugin 'ctrlpvim/ctrlp.vim'
+plugin 'benmills/vimux'
+plugin 'jeetsukumaran/vim-buffergator'
+plugin 'gilsondev/searchtasks.vim'
+plugin 'Shougo/neocomplete.vim'
+plugin 'tpope/vim-dispatch'
 
 " Generic Programming Support 
-Plugin 'jakedouglas/exuberant-ctags'
-Plugin 'honza/vim-snippets'
-Plugin 'Townk/vim-autoclose'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'tobyS/vmustache'
-Plugin 'janko-m/vim-test'
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'neomake/neomake'
+plugin 'jakedouglas/exuberant-ctags'
+plugin 'honza/vim-snippets'
+plugin 'Townk/vim-autoclose'
+plugin 'tomtom/tcomment_vim'
+plugin 'tobyS/vmustache'
+plugin 'janko-m/vim-test'
+plugin 'maksimr/vim-jsbeautify'
+plugin 'vim-syntastic/syntastic'
+plugin 'neomake/neomake'
 
 " Markdown / Writting
-Plugin 'reedes/vim-pencil'
-Plugin 'tpope/vim-markdown'
-Plugin 'jtratner/vim-flavored-markdown'
-Plugin 'LanguageTool'
+plugin 'reedes/vim-pencil'
+plugin 'tpope/vim-markdown'
+plugin 'jtratner/vim-flavored-markdown'
+plugin 'LanguageTool'
 
 " Git Support
-Plugin 'kablamo/vim-git-log'
-Plugin 'gregsexton/gitv'
-Plugin 'tpope/vim-fugitive'
-"Plugin 'jaxbot/github-issues.vim'
+plugin 'kablamo/vim-git-log'
+plugin 'gregsexton/gitv'
+plugin 'tpope/vim-fugitive'
+"plugin 'jaxbot/github-issues.vim'
 
 " PHP Support
-Plugin 'phpvim/phpcd.vim'
-Plugin 'tobyS/pdv'
+plugin 'phpvim/phpcd.vim'
+plugin 'tobyS/pdv'
 
 " Erlang Support
-Plugin 'vim-erlang/vim-erlang-tags'
-Plugin 'vim-erlang/vim-erlang-runtime'
-Plugin 'vim-erlang/vim-erlang-omnicomplete'
-Plugin 'vim-erlang/vim-erlang-compiler'
+plugin 'vim-erlang/vim-erlang-tags'
+plugin 'vim-erlang/vim-erlang-runtime'
+plugin 'vim-erlang/vim-erlang-omnicomplete'
+plugin 'vim-erlang/vim-erlang-compiler'
 
 " Elixir Support 
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'avdgaag/vim-phoenix'
-Plugin 'mmorearty/elixir-ctags'
-Plugin 'mattreduce/vim-mix'
-Plugin 'BjRo/vim-extest'
-Plugin 'frost/vim-eh-docs'
-Plugin 'slashmili/alchemist.vim'
-Plugin 'tpope/vim-endwise'
-Plugin 'jadercorrea/elixir_generator.vim'
+plugin 'elixir-lang/vim-elixir'
+plugin 'avdgaag/vim-phoenix'
+plugin 'mmorearty/elixir-ctags'
+plugin 'mattreduce/vim-mix'
+plugin 'BjRo/vim-extest'
+plugin 'frost/vim-eh-docs'
+plugin 'slashmili/alchemist.vim'
+plugin 'tpope/vim-endwise'
+plugin 'jadercorrea/elixir_generator.vim'
 
 " Elm Support
-Plugin 'lambdatoast/elm.vim'
+plugin 'lambdatoast/elm.vim'
 
 " Theme / Interface
-Plugin 'AnsiEsc.vim'
-Plugin 'ryanoasis/vim-devicons'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'sjl/badwolf'
-Plugin 'tomasr/molokai'
-Plugin 'morhetz/gruvbox'
-Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
-Plugin 'junegunn/limelight.vim'
-Plugin 'mkarmona/colorsbox'
-Plugin 'romainl/Apprentice'
-Plugin 'Lokaltog/vim-distinguished'
-Plugin 'chriskempson/base16-vim'
-Plugin 'w0ng/vim-hybrid'
-Plugin 'AlessandroYorba/Sierra'
-Plugin 'daylerees/colour-schemes'
-Plugin 'effkay/argonaut.vim'
-Plugin 'ajh17/Spacegray.vim'
-Plugin 'atelierbram/Base2Tone-vim'
-Plugin 'colepeters/spacemacs-theme.vim'
+plugin 'AnsiEsc.vim'
+plugin 'ryanoasis/vim-devicons'
+plugin 'vim-airline/vim-airline'
+plugin 'vim-airline/vim-airline-themes'
+plugin 'sjl/badwolf'
+plugin 'tomasr/molokai'
+plugin 'morhetz/gruvbox'
+plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+plugin 'junegunn/limelight.vim'
+plugin 'mkarmona/colorsbox'
+plugin 'romainl/Apprentice'
+plugin 'Lokaltog/vim-distinguished'
+plugin 'chriskempson/base16-vim'
+plugin 'w0ng/vim-hybrid'
+plugin 'AlessandroYorba/Sierra'
+plugin 'daylerees/colour-schemes'
+plugin 'effkay/argonaut.vim'
+plugin 'ajh17/Spacegray.vim'
+plugin 'atelierbram/Base2Tone-vim'
+plugin 'colepeters/spacemacs-theme.vim'
 
 " OSX stupid backspace fix
 set backspace=indent,eol,start
@@ -232,14 +232,14 @@ let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 function! s:my_cr_function()
   return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
   " For no inserting <CR> key.
-  "return pumvisible() ? "\<C-y>" : "\<CR>"
+  return pumvisible() ? "\<C-y>" : "\<CR>"
 endfunction
 
 " Close popup by <Space>.
-"inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
+inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
 
 " AutoComplPop like behavior.
-"let g:neocomplete#enable_auto_select = 1
+let g:neocomplete#enable_auto_select = 1
 
 
 " Enable omni completion.
@@ -253,9 +253,9 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 if !exists('g:neocomplete#sources#omni#input_patterns')
   let g:neocomplete#sources#omni#input_patterns = {}
 endif
-"let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-"let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
-"let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
@@ -326,7 +326,7 @@ map <C-m> :TagbarToggle<CR>
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
-" Neocomplete Plugin mappins
+" Neocomplete plugin mappins
 inoremap <expr><C-g>     neocomplete#undo_completion()
 inoremap <expr><C-l>     neocomplete#complete_common_string()
 
@@ -337,11 +337,8 @@ inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-
-" Mapping selecting Mappings
+:
+:" Mapping selecting Mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)
 omap <leader><tab> <plug>(fzf-maps-o)
